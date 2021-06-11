@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+                        grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: 715px repeat(2, min427px) 715px;
+        }
+     
+    
+        .title {
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+            font-size: xx-large;
+            line-height: 50px;
+        }
+
+        .title_bold {
+            font-weight: 600;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .main_text {
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+            font-size: large;
+            line-height: 30px;
+        }
+
+        .plain_text {
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+            line-height: 30px;
+        }
+
+        .item1 {
+            grid-column: 1/7;
+            grid-row: 1/2;
+            background-image: url('/alisayed1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .item2 {
+            grid-column: 7/10;
+            grid-row: 1/2;
+            background-image: url('/alisayed2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .item2>div {
+            margin: 50px;
+            text-align: justify;
+        }
+
+        .item3>div {
+            margin: 50px;
+            text-align: justify;
+        }
+
+        .item4>div {
+            margin: 50px;
+            text-align: justify;
+        }
+
+        .item5>div {
+            margin: 50px;
+            text-align: justify;
+        }
+
+
+
+
+
+        .item3 {
+            grid-column: 1/5;
+            grid-row: 2/4;
+            background-image: url('/alisayed3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .item4 {
+            grid-column: 5/10;
+            grid-row: 2/3;
+            background-image: url('/alisayed4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+
+        .button1 {
+            background: transparent;
+            border: 1px solid #232323;
+            border-radius: 10px;
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+            font-size: large;
+            padding: 15px 15px;
+            width: 220px;
+            align-items: center;
+        }
+        
+         .button1:hover {
+    background: #6599a7;
+}
+
+        .item5 {
+            grid-column: 5/10;
+            grid-row: 3/4;
+            background-image: url('/alisayed5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .item5,
+        .item6,
+        .item7>div {
+            color: white;
+        }
+
+        .button2 {
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+            font-size: large;
+            padding: 5px;
+            width: 220px;
+        }
+         .button2:hover {
+    background: #6599a7;
+}
+
+        .button2>p {
+            color: white;
+            text-align: center;
+        }
+
+        .button3,
+        .button4 {
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+            font-size: large;
+            padding: 5px 20px;
+            width: 305px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button5 {
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+            font-size: large;
+            padding: 0px 50px 100px 20px;
+            width: 625px;
+            height: 160px;
+        }
+
+
+        .button3,
+        .button4,
+        .button5>p {
+            color: white;
+            text-align: left;
+        }
+
+        .item6 {
+            grid-column: 1/4;
+            grid-row: 4/5;
+            background-image: url('/alisayed6.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .item6_1 {
+            display: flex;
+            flex-direction: column;
+            height: 610px;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 50px;
+        }
+
+
+        .item7_1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 50px;
+            height: 610px;
+        }
+
+
+
+        .item7 {
+            grid-column: 4/10;
+            grid-row: 4/5;
+            background-image: url('/alisayed7.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .social_buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .social_buttons>img {
+            padding-right: 10px;
+        }
+
+
+       
+       
+       
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="item1"></div>
+    <div class="item2">
+
+
+        <div>
+            <img src="alisayed9.png" width="36" height="32"></div>
+
+        <div>
+            <p class="title">Ali Sayed’s<br /><span class="title_bold">Web Designing</span> <br />Project</p>
+        </div>
+        <div>
+            <p class="main_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni maiores et at
+                ducimus ratione quos
+                consectetur labore iste possimus impedit perferendis explicabo amet optio.
+            </p>
+        </div>
+
+        <div>
+            <p class="main_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita laboriosam, odio
+                deleniti quisquam
+                a
+                ratione! Quidem repudiandae recusandae, libero at, rerum facere atque inventore maxime.</p>
+        </div>
+
+    </div>
+
+    <div class="item3">
+
+        <div class="item3_1">
+            <div id='item3_1_1'>
+                <p class="title">Drawing <span class="title_bold">Sketch</span></p>
+                <p class="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi asperiores similique,
+                    explicabo eos
+                    dolor
+                    consectetur ducimus beatae et nemo delectus alias.</p>
+            </div>
+            <div id='item3_1_2'>
+                <p class="title">Making <span class="title_bold">Design</span></p>
+                <p class="main_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim odio dolor
+                    distinctio cumque molestiae
+                    consectetur perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div id='item3_1_3'>
+                <p class="title">Developing <span class="title_bold">Product</span></p>
+                <p class="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis nihil cum!
+                    Quaerat, eum voluptas. Quaerat, eum voluptas. Quaerat, eum voluptas. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. </p>
+            </div>
+        </div>
+    </div>
+    <div class="item4">
+        <div>
+
+            <p class="title">Best <span class="title_bold">Starting</span></p>
+        </div>
+        <div>
+            <p class="main_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa quisquam
+                neque obcaecati deserunt, architecto nam ea odio ab corrupti aliquam odit? Architecto nam ea odio ab
+                corrupti aliquam odit?</p>
+        </div>
+        <div><button class="button1">View our history</button></div>
+    </div>
+
+    </div>
+    <div class="item5">
+        <div>
+            <p class="title">Verified <span class="title_bold">Dummy</span></title>
+            </p>
+        </div>
+        <div>
+            <p class="main_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa quisquam
+                neque obcaecati deserunt,
+                architecto nam ea odio ab corrupti aliquam odit? Quos aperiam cupiditate commodi voluptas
+                consequatur eum
+                veritatis!</p>
+        </div>
+        <div><button class="button2">
+                <p>Go To The Page</p>
+            </button></div>
+    </div>
+    </div>
+    <div class="item6">
+        <div class="item6_1">
+            <div>
+                <p class="title">This Webpage is <br /><span class="title_bold">Designed By</span></p>
+            </div>
+
+            <div>
+                <img src="alisayed8.jpg" width="36" height="32">
+                <p class="plain_text">Ali Sayed</span><br />
+                    <span class="plain_text">Graphic Designer</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="item7">
+        <div class="item7_1">
+
+            <section>
+                <p class="title">Say <span class="title_bold">'Hello'</span></p>
+                <div>
+
+
+                    <button class="button3">
+                        <p>Your Name</p>
+                    </button>
+                    <button class="button4">
+                        <p>Your Email</p>
+                    </button>
+                    <div>
+                        <div>
+                            <button class="button5">
+                                <p>Your Message Here ...</p>
+                            </button></div>
+                        </section>
+                    <div>
+
+                        <p class="plain_text">Stay connected with us...</p>
+                        <span class="social_buttons">
+                            <img src="alisayed9.jpg" width="26" height="26">
+                            <img src="alisayed10.jpg" width="26" height="26">
+                            <img src="alisayed11.jpg" width="26" height="26">
+                        </span>
+                        <p class="plain_text">Please feel free to contact with me for any kind of project.</p>
+                    </div>
+                </div>
+</body>
+
+</html>
